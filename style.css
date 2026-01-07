@@ -1,28 +1,68 @@
-body {
-    background-color: #0f172a;
-    color: white;
+/* App background and font */
+.stApp {
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #000000 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    color: #ffffff;
 }
 
-.header {
-    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+/* Card container */
+.card {
+    background-color: #000000; /* black card background */
     padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(255, 0, 0, 0.5); /* red shadow */
+    margin-bottom: 25px;
+    color: #ffffff;
+    border: 2px solid #ff0000; /* red border */
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #ff0000; /* red headings */
+    letter-spacing: -0.4px;
+}
+
+/* Metrics boxes */
+div[data-testid="stMetric"] {
+    background-color: #1a1a1a; /* dark gray */
+    border: 2px solid #ff0000; /* red border */
+    border-radius: 14px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(255, 0, 0, 0.5); /* red shadow */
+    color: #ffffff;
+}
+
+/* Prediction box */
+.prediction-box {
+    background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+    padding: 22px;
     border-radius: 14px;
     text-align: center;
-    margin-bottom: 30px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff0000; /* red text for predictions */
+    margin-top: 15px;
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.6);
 }
 
-.header h1 {
-    font-size: 42px;
-    margin-bottom: 5px;
+/* Slider styling (Streamlit override) */
+.css-1aumxhk {
+    color: #ff0000 !important;
 }
 
-.header p {
-    font-size: 18px;
-    opacity: 0.9;
+.css-1fv8s86 input[type=range] {
+    accent-color: #ff0000; /* red slider */
 }
 
-.stMetric {
-    background-color: #1e293b;
-    padding: 15px;
-    border-radius: 12px;
+/* Tables */
+.stDataFrameContainer {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Plots */
+canvas {
+    background-color: #000000 !important;
+    color: #ffffff !important;
 }
